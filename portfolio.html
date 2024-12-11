@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sincere Warren | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+</head>
+<body>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <a class="nav-icon" onclick="hamburger()">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+
+    <header>
+        
+        <div class="mobile">  
+            <h1>Sincere Warren</h1>
+            <h3>Game Programmer</h3>
+        </div>
+
+        <div class="tab-desk">
+            <img src="images/logo.png" alt="game programmer logo">
+            <h1>Sincere Warren</h1>
+            <h3>Game Programmer</h3>
+        </div>
+        
+    </header>
+
+    <nav class="tab-desk">
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Projects</h1>
+        <article id="full-projects" class="grid">
+
+            <section>  
+                <figure id="coin">
+                    <img src="images/coin-game.png" alt="python program output">
+                    <figcaption>Simple Coin Game in Python</figcaption>
+                    </figure>
+                <p>This program generates a game of heads or tails with a coin, the user guesses whether the coin will be heads or tails.</p>
+                        <p><a href="projects/CoinGame.py" target="_blank" download="projects/CoinGame.py" class="button-link">Code</a></p>
+            </section>
+            <section>
+                <figure id="blackjack">
+                    <img src="images/blackjack.png" alt="java program output">
+                    <figcaption>Simple Blackjack Game in Java </figcaption>
+                </figure>
+                <p>This program generates a game of blackjack between the user and the computer, following the basic rules of blackjack and determining the winner. Includes replayability.</p>
+                <h2>This is a Main.java file!</h2>
+                        <p><a href="projects/Main.java" target="_blank" download="projects/Main.java" class="button-link">Code</a></p>
+            </section>
+            
+        </article>
+        
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2024 by Sincere Warren | All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,340 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, article, section, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #D3D4D7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile, .mobile-tablet {
+    display: block;
+}
+
+.tab-desk, .desktop, #menu-links {
+    display: none;
+}
+
+
+/* Style rules for header area */
+.mobile h1 {
+    padding: 2%;
+    text-align: left;
+    margin: 2% 0 0 3%;
+    color: #143AA2;
+    font-family: "Open Sans", sans-serif;
+}
+
+.mobile h3 {
+    padding: 2%;
+    text-align: left;
+    margin: 2% 0 0 3%;
+    color: #3E8DE3;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #143AA2;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #04060D;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #04060D;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: "Open Sans", sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h1  {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+#introduction {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#introduction h1 {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+#introduction img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#introduction h2 {
+    text-align: center;
+    font-size: 1.25em;
+    color: #333;
+    margin-top: 10px;
+}
+
+#education img {
+    display: block;
+    margin: 20px auto;
+    width: 75%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.link {
+    color: #D3D4D7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #3E8DE3;
+    color: #D3D4D7;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #143AA2;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #04060D;
+}
+
+figure {
+    border: 4px solid #3E8DE3;
+    box-shadow: 6px 6px 10px #04060D;
+    max-width: 400px;
+    margin: 2% auto;
+}
+
+figcaption {
+    padding: 2%;
+    border-top: 4px solid #D3D4D7;
+    background-color: #D3D4D7;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+figure p, #contact p {
+    text-align: center;
+}
+
+p a {
+    color: #D3D4D7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+figcaption a {
+    color: #04060D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    color: #04060D;
+    padding: 3%;
+    margin: 1% 0;
+}
+
+article {
+    padding: 2%;
+}
+
+#projects, #programming {
+    background-color: #143AA2;
+    color: #D3D4D7;
+}
+
+#background {
+    color: #04060D;
+    padding: 2em;
+    text-align: center;
+}
+
+#background h3 {
+    margin: 0.5em 0;
+}
+
+#programming ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#programming ul li {
+    display: inline-block;
+    margin: 0.5em 1em;
+    padding: 0.5em 1em;
+    background-color: #D3D4D7;
+    color: #143AA2;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#contact {
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #143AA2;
+    color: #D3D4D7;
+    padding: 1% 0%;
+    position: relative;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for header area */
+    header {
+        padding: 20px;
+        text-align: center;
+        background-color: #D3D4D7;
+    }
+
+    header img {
+        max-width: 300px;
+        border-radius: 50%;
+        margin: 1em auto;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav ul {
+    list-style-type: none;
+    text-align: center;
+    }
+    
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    nav li a {
+        padding: 0.5em;
+        display: block;
+        color: #D3D4D7;
+        text-decoration: none;
+    }
+
+    /* Tablet Viewport: Style rules for main content */
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+        font-size: 1.75em;
+    }
+
+    #education img {
+        width: 100%;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    /* Desktop Viewport: Show Desktop class, hide mobile-tablet class */
+    .desktop {
+        display: block;
+    }
+
+    .mobile-tablet {
+        display: none;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #04060D;
+        background-color: #D3D4D7;
+        opacity: 0.5;
+    }
+
+    #introduction h2 {
+        font-size: 2em;
+    }
+}
